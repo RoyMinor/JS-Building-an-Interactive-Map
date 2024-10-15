@@ -4,12 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Leaflet Map</title>
+    <title>My 1st Leaflet Map</title>
     <style>
+        body {
+            background-color: gray;
+            margin: 20;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
         #map {
-            height: 600px;
+            height: 500px;
             background-color: #ccc;
         }
+
+        .container {
+            margin: 0 auto;
+            width: 60%;
+            padding: 20px;
+            background-color: mintcream;
+            border-radius: 10px;
+            box-shadow: 0px 0px 30px rgba(0,0,0,0.4);
+            /* text-align: center; */
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
     </style>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
@@ -20,10 +39,19 @@
 
     </head>
 <body>
-    <div id="map" style="height: 600px;"></div>
+    <div id="map" style="height: 500px;"></div>
     <script src="app.js"></script> <!-- This is the only external JS file you need -->
-
+    <div class="container">
+    <h1 style="text-align: center;">This is my first interactive map!</h1>
+    <h3><p class="text">This map shows a simple point on the map. You can click on it to open a popup with a message.</p></h3>
+    <p class="text">During the creation of this interactive map, I used <b><mark>JavaScript</mark></b> in the code: <br>
+    I added a Title. <br>
+    I added an H1 heading. <br>
+    I added color to the background. <br>
+    I center all the text that needed to centered. <br>
+    I added a simple CSS in the Head because it was a small project and didn't think this particular project needed me to add an app.css file. <br>
+    I tried to make it a little more appealing 😊.</p>
+    </div>
 </body>
 </html>
 
-<!-- Note: You do NOT need to create an external JS file for this project despite any instructions you may see in Canvas. The file app.js that's included in the starter code is the only external JS file you need. -->
